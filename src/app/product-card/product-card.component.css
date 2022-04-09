@@ -1,0 +1,41 @@
+.example-card {
+  max-width: 20em;
+}
+
+.example-header-image {
+  background-size: cover;
+}
+
+.cards
+{
+  display: inline-flex;
+  margin: 5%;
+}
+
+.red-icon
+{
+  color: red;
+
+}
+
+.orangered-icon
+{
+  color: orangered;
+}
+
+.align-item-center
+{
+  align-items: center;
+}
+
+.inline
+{
+  display: inline;
+}
+
+
+.search
+{
+  padding: 1%;
+  border-radius: 10%;
+}

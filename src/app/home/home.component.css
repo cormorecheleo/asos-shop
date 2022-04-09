@@ -1,0 +1,45 @@
+.home-div
+{
+  height: 100%;
+  width: 100%;
+  background-image: url("../../assets/sosa-models.jpg");
+  background-position: center;
+}
+
+.child-div
+{
+  background-color: rgba(0,0,0,0.4);
+  height: 100%;
+  width: 100%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.child-title
+{
+  margin-bottom: 13%;
+  text-align: center;
+}
+
+.welcome
+{
+  font-size: 500%;
+}
+
+.brand
+{
+  height: 70%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 3%;
+  text-align: center;
+}
+
+.bold
+{
+  font-weight: bold;
+}
+

@@ -1,0 +1,11 @@
+.app-footer{
+  position: fixed;
+  bottom: 0;
+  background-color: darkblue;
+  color: darkgray;
+}
+
+span
+{
+  margin: auto;
+}

@@ -1,0 +1,40 @@
+<div align="center">
+  <label>Recherche</label><br/>
+  <input type="search" class="search" [(ngModel)]="searchText" placeholder="Exemple: Vans" autofocus/>
+</div>
+<div *ngFor="let card of product | appFilter: searchText" class="cards">
+  <mat-card class="example-card">
+    <!--
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title>Shiba Inu</mat-card-title>
+      <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+    </mat-card-header>
+    -->
+    <img mat-card-image src="http://{{card.imageUrl}}" alt="Asos image product">
+    <mat-card-content>
+      <p>
+        {{card.brandName}} - {{card.name}} - {{card.colour}}
+      </p>
+    </mat-card-content>
+    <mat-card-actions>
+      <div class="align-item-center">
+        <div class="inline">
+          <h2 class="inline">{{getCurrentPrice(card.price)}} €</h2>
+        </div>
+        <div class="inline">
+          <button (click)="handleLike(card)" mat-icon-button>
+            <div *ngIf="card.liked; then thenBlock else elseBlock"></div>
+            <ng-template #thenBlock><mat-icon class="red-icon">favorite</mat-icon></ng-template>
+            <ng-template #elseBlock><mat-icon class="red-icon">favorite_border</mat-icon></ng-template>
+          </button>
+          <span *ngIf="card.isSellingFast">
+          <button mat-icon-button>
+            <mat-icon class="orangered-icon">local_fire_department</mat-icon>
+          </button>
+        </span>
+        </div>
+      </div>
+    </mat-card-actions>
+  </mat-card>
+</div>
